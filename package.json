@@ -1,0 +1,28 @@
+{
+  "name": "foundation-vue",
+  "version": "0.0.1",
+  "description": "ZURB Foundation for Vue 2",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Foundation",
+    "Foundation 6",
+    "Foundation for Vue",
+    "Vue",
+    "CSS",
+    "Flexbox",
+    "Grid",
+    "Cell"
+  ],
+  "author": "diablo9983 <diablo9983@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "foundation-sites": "^6.5.1",
+    "vue-functional-data-merge": "^2.0.7"
+  },
+  "devDependencies": {
+    "vue": "^2.5.17"
+  }
+}

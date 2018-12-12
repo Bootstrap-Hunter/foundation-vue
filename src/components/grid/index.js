@@ -1,0 +1,18 @@
+import fGrid from './grid'
+import fCell from './cell'
+import { registerComponents, vueUse } from '../../utils/plugins'
+
+const components = {
+    fGrid,
+    fCell
+}
+
+const VuePlugin = {
+    install (Vue) {
+        registerComponents(Vue, components)
+    }
+}
+  
+vueUse(VuePlugin)
+  
+export default VuePlugin
