@@ -105,8 +105,6 @@ export default {
         }
 
         classList.push({
-            [`offset-${props.offset}`]: props.offset,
-            [`order-${props.order}`]: props.order,
             'auto': props.auto,
             'shrink': props.shrink
         })
