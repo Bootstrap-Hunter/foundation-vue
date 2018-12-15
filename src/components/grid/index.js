@@ -1,8 +1,10 @@
+import fGridContainer from './gridContainer'
 import fGrid from './grid'
 import fCell from './cell'
 import { registerComponents, vueUse } from '../../utils/plugins'
 
 const components = {
+    fGridContainer,
     fGrid,
     fCell
 }
