@@ -1,5 +1,5 @@
 import { mergeData } from 'vue-functional-data-merge'
-import { assign, create, keys } from '../../utils/object'
+import { assign, create } from '../../utils/object'
 
 function boolProp() {
     return {
@@ -28,7 +28,7 @@ export default {
     render (h, { props, data, children }) {
         const classList = []
 
-        for(const modifier of keys(modifierProps)) {
+        for(const modifier in modifierProps) {
             if(props[modifier]) {
                 classList.push(modifier)
             }

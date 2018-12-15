@@ -1,7 +1,7 @@
 import { mergeData } from 'vue-functional-data-merge'
 import { arrayIncludes } from '../../utils/array'
 import suffixPropName from '../../utils/suffix-prop-name'
-import { assign, create, keys } from '../../utils/object'
+import { assign, create } from '../../utils/object'
 
 const GUTTERS = ['margin', 'padding']
 const GUTTERS_DIRECTION = ['x', 'y']
@@ -32,12 +32,12 @@ export default {
         const staticClass = 'grid-' + (props.type === 'horizontal' ? 'x' : 'y')
         const classList = []
         // Loop over `margin` and `padding` gutter props
-        for(const gutter of keys(guttersPropMap)) {
+        for(const gutter in guttersPropMap) {
             // If gutter is set
             if(props[gutter]) {
                 // Get kebab-case prop name
                 const gutterCssName = gutter.replace( /([a-z])([A-Z])/, "$1-$2").toLowerCase()
-                // Finally push class to array
+                // Finally push correct class to array
                 classList.push(`grid-${gutterCssName}`)
             }
         }
